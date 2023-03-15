@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.navbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.top {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.home {
+    white-space: normal;
+    width: auto;
+    border: none;
+    outline: 0;
+    color: #fff;
+    background-color: #f44336;
+    float: right;
+    padding: 12px 24px;
+    font-size: 18px;
+    vertical-align: middle;
+    display: none;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+
+}
