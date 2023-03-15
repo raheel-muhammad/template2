@@ -27,22 +27,136 @@ body {
     clear: both;
 }
 
-.home {
+.BAR {
     white-space: normal;
     width: auto;
     border: none;
     outline: 0;
-    color: #fff;
-    background-color: #f44336;
+    color: #000;
+    background-color: #fff;
     float: right;
     padding: 12px 24px;
     font-size: 18px;
-    vertical-align: middle;
-    display: none;
+    display: block;
     overflow: hidden;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
+    user-select: none;
+}
 
+.BAR:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bar {
+    white-space: normal;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    padding: 12px 24px;
+    user-select: none;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.small-screen {
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+.bar:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.bar1 {
+    width: 100%;
+    display: none;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    padding: 12px 24px;
+    user-select: none;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    color: #fff;
+    background-color: #f44336;
+    text-align: center;
+    display: block;
+}
+
+.start-page {
+    margin: 16px !important;
+    font-size: 64px !important;
+}
+
+h1 {
+    font-weight: 400;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.template {
+    font-size: 24px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.button {
+    color: #fff;
+    background-color: #000;
+    margin-top: 16px;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    writing-mode: horizontal-tb !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button:hover {
+    color: #000;
+    background-color: #ccc;
 }
