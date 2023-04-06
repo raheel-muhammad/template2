@@ -4,27 +4,15 @@
     box-sizing: border-box;
 }
 
-html {
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.navbar {
-    top: 0;
+.top {
     position: fixed;
     width: 100%;
     z-index: 1;
+    top: 0;
+    font-family: "Lato", sans-serif;
 }
 
-.top {
-    display: table;
-    clear: both;
-    font-family: "Montserrat", sans-serif;
+.nav-bar {
     color: #fff;
     background-color: #f44336;
     text-align: left;
@@ -32,9 +20,10 @@ body {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     width: 100%;
     overflow: hidden;
+    font-family: "Montserrat", sans-serif;
 }
 
-.home {
+.top-bar {
     white-space: normal;
     width: auto;
     border: none;
@@ -50,41 +39,37 @@ body {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    display: none;
+
 }
 
-.BAR {
+.home {
     white-space: normal;
+    float: left;
     width: auto;
     border: none;
+    display: block;
     outline: 0;
     color: #000;
     background-color: #fff;
-    float: left;
     padding: 12px 24px;
-    font-size: 18px;
-    display: block;
+    user-select: none;
     overflow: hidden;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    font-size: 18px;
     font-family: "Montserrat", sans-serif;
-    user-select: none;
+
+
 }
 
-.BAR:hover {
-    color: #000;
+.home:hover {
     background-color: #ccc;
 }
 
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-.bar {
+.link {
     white-space: normal;
     float: left;
     width: auto;
@@ -92,87 +77,82 @@ body {
     display: block;
     outline: 0;
     padding: 12px 24px;
-    user-select: none;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
     text-align: center;
     cursor: pointer;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+
 }
 
-.small-screen {
-    color: #000;
-    background-color: #fff;
-    font-size: 18px;
-    font-family: "Lato", sans-serif;
-    line-height: 1.5;
-}
-
-.bar:hover {
+.link:hover {
     color: #000;
     background-color: #fff;
 }
 
-.bar1 {
-    width: 100%;
+.nav-bar-1 {
     display: none;
-    text-align: left;
-    border: none;
-    white-space: normal;
-    float: none;
-    outline: 0;
-    padding: 12px 24px;
-    user-select: none;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    cursor: pointer;
-    font-family: "Lato", sans-serif;
 }
 
 .container {
+    font-family: "Lato", sans-serif;
     color: #fff;
     background-color: #f44336;
     text-align: center;
     display: block;
-    padding: 128px 16px;
-    display: block;
 
-}
-
-.start-page {
-    margin: 16px !important;
-    font-size: 64px !important;
 }
 
 h1 {
+    font-family: "Montserrat", sans-serif !important;
     font-weight: 400;
+    margin: 10px 0;
+    font-size: 36px;
     display: block;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    padding: 0;
+}
+
+.start-page {
+    margin: 16px;
+    font-size: 64px;
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
 
 .template {
-    font-size: 24px;
+    font-size: 24px !important;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font: 15px;
+}
+
+
+p {
     display: block;
+    font-family: "Lato", sans-serif !important;
+    text-align: justify;
+    line-height: 1.5;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+
 }
 
-.button {
+.btn {
     color: #fff;
     background-color: #000;
-    margin-top: 16px;
-    font-size: 18px;
-    padding: 12px 24px;
+    padding: 12px 24px !important;
+    margin-top: 16px !important;
+    font-size: 18px !important;
+    user-select: none;
     border: none;
     display: inline-block;
     vertical-align: middle;
@@ -181,38 +161,36 @@ h1 {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
-    user-select: none;
-    writing-mode: horizontal-tb !important;
     font-family: "Montserrat", sans-serif;
 }
 
-.button:hover {
-    color: #000;
+.button {
+    font-family: "Montserrat", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    text-transform: none;
+    margin: 0;
+    font: inherit;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+}
+
+.btn:hover {
     background-color: #ccc;
+    color: #000;
 }
 
-.bottom-container {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    padding: 0.01em 16px;
-}
-
-.bottom-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 980px;
-}
-
-.two-third {
-    float: left;
-}
-
-h1 {
+h5 {
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     margin: 10px 0;
-    font-size: 36px;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
+    font-size: 18px;
+    padding: 0;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
@@ -220,22 +198,21 @@ h1 {
 .text {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-family: "Lato", sans-serif;
 }
 
-h5 {
-    font-weight: 400;
-    margin: 10px 0;
-    font-size: 18px;
-    display: block;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.text-grey {
+    color: #757575;
+    text-align: inherit !important;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
 }
 
-.fa-anchor {
+.icon {
+    text-align: center;
+    float: left;
     font-size: 200px;
-    content: "\f13d";
+
 }
 
 .fa {
@@ -243,33 +220,19 @@ h5 {
     font: normal normal normal 14px/1;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-}
-
-.anchor {
-    color: #f44336;
-    padding-top: 64px !important;
-    padding-bottom: 64px !important;
+    white-space: normal;
+    color: #fff;
+    user-select: none;
     text-align: center;
+    cursor: pointer;
+    font-size: 15px;
 }
 
-.text-grey {
-    color: #757570;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.bottom-2 {
-    color: #000;
-    background-color: #f1f1f1;
+.bottom-container {
     padding-top: 64px !important;
     padding-bottom: 64px !important;
     padding: 0.01em 16px;
+    font-family: "Lato", sans-serif;
 }
 
 .bottom-content {
@@ -280,74 +243,137 @@ p {
 
 .two-third {
     float: left;
+    width: 66.66666%;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 64px !important;
 }
 
-h1 {
-    font-weight: 400;
-    margin: 10px 0;
-    font-size: 36px;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.icon {
+    text-align: center !important;
+    float: left;
+    width: 33.33333%;
 }
 
 .text {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
 }
 
-h5 {
-    font-weight: 400;
-    margin: 10px 0;
-    font-size: 18px;
-    display: block;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.fa-anchor {
+    font-size: 200px;
+    color: #f44336 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
 }
 
-.text-grey {
-    color: #757570;
+.bottom-second {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    padding: 0.01em 16px;
+    content: "";
+    display: flex;
+    clear: both
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.two-third-second {
+    width: 66.66666%;
+    float: left;
+}
+
+.icon-two {
+    text-align: center !important;
+    width: 33.33333%;
+    float: left;
+}
+
+.fa-coffee {
+    font-size: 200px !important;
+    color: #f44336 !important;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    margin-right: 16px !important
 }
 
 .quote-bar {
     color: #fff;
     background-color: #000;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
     text-align: center;
     opacity: 0.60;
     padding: 0.01em 16px;
-}
-
-.icon {
-    text-align: center;
-    float: left;
 
 }
 
 .quote {
     margin: 16px;
     font-size: 24px;
-    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    display: block;
+    font-family: "Lato", sans-serif;
+}
+
+.ftr {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
     text-align: center;
+    opacity: 0.60;
+    padding: 0.01em 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
 
 }
 
-h1 {
-    font-weight: 400;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.footer-icon {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 24px !important;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+.ICON {
+    color: #000;
+}
+
+.ICON:hover {
+    color: #616161;
+}
+
+.powered {
+    text-align: center;
+}
+
+@media only screen and (max-width:601px) {
+    .link {
+        display: none;
+    }
+
+    .top-bar {
+        display: block;
+
+    }
+
+    .two-third {
+        width: 100%;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .icon-two {
+        width: 100%;
+    }
+
+    .two-third-second {
+        width: 100%;
+    }
 }
